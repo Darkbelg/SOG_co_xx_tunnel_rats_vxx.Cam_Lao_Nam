@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=6711;
+		nextID=6717;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=191;
+		nextID=192;
 	};
 	class Camera
 	{
-		pos[]={5284.8589,132.54056,16963.148};
-		dir[]={0.42704314,-0.48153758,0.76536673};
-		up[]={0.23463373,0.87641829,0.42052126};
-		aside[]={0.87327617,-1.3876706e-007,-0.48725224};
+		pos[]={2788.0984,223.94443,20028.781};
+		dir[]={-0.53373122,-0.51885831,0.66777021};
+		up[]={-0.32394868,0.85486025,0.40530381};
+		aside[]={0.78114545,-2.9802322e-008,0.62434906};
 	};
 };
 binarizationWanted=0;
@@ -168,7 +168,6 @@ randomSeed=16285177;
 class ScenarioData
 {
 	author="Darkbelg";
-	disabledAI=1;
 	respawn=3;
 	class Header
 	{
@@ -549,7 +548,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=242;
+		items=243;
 		class Item0
 		{
 			dataType="Marker";
@@ -4983,7 +4982,7 @@ class Mission
 			name="marker_284";
 			type="b_maint";
 			id=6330;
-			atlOffset=0.10513306;
+			atlOffset=0.10491943;
 		};
 		class Item50
 		{
@@ -12674,6 +12673,39 @@ class Mission
 								};
 							};
 							value=1;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item242
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={15915.76,14.98,6930.2441};
+			};
+			id=6714;
+			type="vn_module_gesturemenu";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="vn_module_gesturemenu_maxRange";
+					expression="_this setVariable ['vn_module_gesturemenu_maxRange',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=60;
 						};
 					};
 				};
